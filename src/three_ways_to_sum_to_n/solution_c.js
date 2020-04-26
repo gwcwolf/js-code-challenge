@@ -4,5 +4,11 @@
 // Output: `return` - summation to `n`, i.e. sum_to_n(5) === 1 + 2 + 3 + 4 + 5 === 15.
 
 var sum_to_n = function(n) {
-    // your code here
+    let sum = n; //Declare and initialize sum
+    while(n>0){
+        //Using while loop, n is added to the summation variable 'sum' each time decreasing by 1 till it reaches 1 
+        n--;
+        sum += n;
+    }
+    return sum;
 };
